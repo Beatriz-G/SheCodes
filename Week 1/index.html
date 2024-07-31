@@ -4,31 +4,88 @@
         <title>SheCodes | Weather App</title>
         <meta charset="UTF-8">
         <meta name="robots" content="noindex">
+        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Orbitron:wght@400..900&family=Roboto:wght@500&display=swap" rel="stylesheet">
         <style>
             body {
                 text-align: center;
+                font-family: "Roboto", sans-serif;
+
+            }
+
+            header .sun {
+                font-size: 40px;
+            }
+
+            header h1 {
+                color: #2F64D6;
+                font-weight: 500;
+                font-size: 45px;
+            }
+
+            header p {
+                font-size: 35px;
+            }
+
+            main h3 {
+                font-size: 20px;
+            }
+
+            main p {
+                font-size: 18px;
+                font-family: "Gruppo", sans-serif;
+        
+            }
+
+            div {
+                padding: 20px 0;
+                width: 100%;
+                position: relative;
+            
+            }
+
+            div:hover {
+            background-color: #FEFBEF;      
+            }
+
+            button {
+                background-color: #2F64D6;
+                color: white;
+                border-radius: 20px;
+            }
+
+            button:hover {
+                color: white;
+                border: 1px solid #2F64D6;
+            }
+
+            footer {
+                font-family: "Gruppo", sans-serif;
+                font-size: 20px;
             }
         </style>
     </head>
     <body>
         <header>
-            <p>🌤️</p>
+            <p class="sun">🌤️</p>
             <h1>Currently 21° in Tokyo</h1>
             <p>13° / <strong>23°</strong></p>
         </header>
         <main>
-            <div clas="tomorrow">
+            <div>
                 <h3>🌧️Tomorrow</h3>
                 <p>10° / <strong>22°</strong></p>
             </div>
-            <div class="saturday">
+            <div>
                 <h3>⛅Saturday</h3>
                 <p>15° / <strong>17°</strong></p>
             </div>
-            <div class="Sunday">
+            <div>
                 <h3>☀️Sunday</h3>
                 <p>25° / 28°</p>
             </div>
+            <button>
+                <p>Change City</p>
+            </button>
         </main>
         <footer>
             <p>Coded by Matt Delac</p>
