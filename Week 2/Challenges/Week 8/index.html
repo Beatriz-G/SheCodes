@@ -74,6 +74,17 @@
         Apply Now
       </button>
     </section>
-    <script></script>
+    <script>
+        function askForCountry() {
+            let country = prompt("What country are you from?");
+            if (country == "Brazil"){
+                alert('You speak Portuguese!');
+            } else {
+                if (country != "Brazil")
+                alert ('Go learn Portuguese!');
+            }
+        }
+        askForCountry();
+    </script>
   </body>
 </html>
