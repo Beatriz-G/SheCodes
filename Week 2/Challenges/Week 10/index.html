@@ -74,6 +74,25 @@
         Apply Now
       </button>
     </section>
-    <script></script>
+    <script>
+        function ageAbility(){
+            let name = prompt("What is your name?");
+            let age = prompt("What is your age?")
+
+            if (age >= 18) {
+                let h1 = document.querySelector("h1");
+                h1.innerHTML = "Hi, " + name + "! " + "Welcome to SheCodes!";
+            } else {
+                let h1 = document.querySelector("h1");
+                h1.innerHTML = "Sorry, " + name + "! " + "You cannot join SheCodes!";
+            }
+            
+        }
+
+        let contactButton = document.querySelector("button");
+
+        contactButton.addEventListener("click", ageAbility)
+
+    </script>
   </body>
 </html>
